@@ -13,10 +13,10 @@ const Banner = () => {
 
   return (
     <div className="w-full flex flex-col justify-center items-center my-3">
-      <div className="w-94 sm:w-[98%] sm:h-60 self-center rounded-lg overflow-hidden h-36 object-fit-contain">
+      <div className="w-[98%] sm:w-[98%] sm:h-70 self-center rounded-lg overflow-hidden h-36">
         <img
           src={bannerList[bannerIndex]?.url}
-          className="w-100 h-100 sm:w-full sm:rounded-lg"
+          className="w-100 h-full sm:w-full sm:rounded-lg object-cover sm:object-contain overflow-hidden"
         />
       </div>
       <div className="flex gap-2 mt-3">
@@ -24,8 +24,8 @@ const Banner = () => {
           return (
             <div
               className={`${
-                bannerIndex === index ? "bg-blue-300" : "bg-gray-200"
-              } w-2 h-2 rounded-full flex`}
+                bannerIndex === index ? "bg-blue-300 w-4" : "bg-gray-200 w-2"
+              } h-2 rounded-full flex`}
             >
               <div />
             </div>

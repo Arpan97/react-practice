@@ -1,23 +1,25 @@
 const tabsArr = [
   { _id: 1, title: "Home", type: "both", link: "/" },
-  { _id: 2, title: "Category", type: "both", link: "/category" },
-  { _id: 3, title: "My Cart", type: "login", link: "/cart" },
-  { _id: 4, title: "About Us", type: "both", link: "/about" },
-  { _id: 5, title: "Help & Support", type: "both", link: "/help" },
+  { _id: 3, title: "Become a Seller", type: "login", link: "/cart" },
+  { _id: 4, title: "More", type: "both", link: "/about" },
 ];
 
 const bannerList = [
   {
     _id: 1,
-    url: "https://static.vecteezy.com/system/resources/thumbnails/005/720/479/small_2x/banner-abstract-background-board-for-text-and-message-design-modern-free-vector.jpg",
+    url: "https://rukminim2.flixcart.com/fk-p-flap/3240/540/image/8c2598b5c820a42b.jpg?q=60",
   },
   {
     _id: 2,
-    url: "https://img.freepik.com/free-vector/stylish-glowing-digital-red-lines-banner_1017-23964.jpg",
+    url: "https://rukminim2.flixcart.com/fk-p-flap/3240/540/image/d914343e662d6749.jpeg?q=60",
   },
   {
     _id: 3,
-    url: "https://cdn.pixabay.com/photo/2015/10/29/14/38/web-1012467_1280.jpg",
+    url: "https://rukminim2.flixcart.com/fk-p-flap/3240/540/image/104341249fe40f1d.jpg?q=60",
+  },
+  {
+    _id: 4,
+    url: "https://rukminim2.flixcart.com/fk-p-flap/3240/540/image/f16ce51e6dd8a20c.jpg?q=60",
   },
 ];
 
@@ -25,32 +27,37 @@ const shopByCategory = [
   {
     _id: 1,
     title: "Clothing",
-    url: "https://t3.ftcdn.net/jpg/01/38/94/62/360_F_138946263_EtW7xPuHRJSfyl4rU2WeWmApJFYM0B84.jpg",
+    url: "https://rukminim2.flixcart.com/fk-p-flap/128/128/image/ec2982e5564fe07c.png?q=100",
   },
   {
     _id: 2,
-    title: "TV/Laptop",
-    url: "https://media.istockphoto.com/id/185007194/photo/collection-of-electronic-devices-on-white-background.jpg?s=612x612&w=0&k=20&c=NJx7burKF9MZVCcVA4cZrTlNVOAL4WW4DeXHdW2mwPI=",
+    title: "TV & Appliances",
+    url: "https://rukminim2.flixcart.com/fk-p-flap/128/128/image/9c64dfa667885ca9.png?q=100",
   },
   {
     _id: 3,
-    title: "Mobile",
-    url: "https://img.freepik.com/free-vector/flat-design-smartphone-different-perspectives_52683-52558.jpg",
+    title: "Mobiles & Tablets",
+    url: "https://rukminim2.flixcart.com/fk-p-flap/128/128/image/cd6aca4f61e8ea95.png?q=100",
   },
   {
     _id: 4,
-    title: "Food Court",
-    url: "https://images.picxy.com/cache/2020/11/24/bfbf1acd26e67aa7d1b0e0fb83b329e3.jpg",
+    title: "Electronics",
+    url: "https://rukminim2.flixcart.com/fk-p-flap/128/128/image/4d6b13d5a0e0724a.png?q=100",
   },
   {
     _id: 5,
-    title: "Shoes",
-    url: "https://hips.hearstapps.com/hmg-prod/images/mhl-052324-sandals-1979-6658d809e534a.jpg?crop=0.593xw:0.889xh;0.196xw,0.111xh&resize=1120:*",
+    title: "Home & Kitchen",
+    url: "https://rukminim2.flixcart.com/fk-p-flap/128/128/image/febcb9896245caf4.png?q=100",
   },
   {
     _id: 6,
-    title: "Females Gowns",
-    url: "https://images.textilecatalog.in/images/800/catalog/20230216/1676526080558757903-167646280697293928-z.jpeg",
+    title: "Beauty & Toys",
+    url: "https://rukminim2.flixcart.com/fk-p-flap/128/128/image/3d7144345bbcf2e4.png?q=100",
+  },
+  {
+    _id: 7,
+    title: "Furniture",
+    url: "https://rukminim2.flixcart.com/fk-p-flap/128/128/image/cddd92e134ba3ea9.png?q=100",
   },
 ];
 
@@ -493,172 +500,7 @@ const wishlistData = [
   },
 ];
 
-const groceryTrendingProduct = [
-  {
-    _id: 1,
-    title: "Pune Special Apples",
-    quantityAvailable: 10,
-    price: 1299,
-    discountPrice: 1099,
-    productDescription:
-      "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum eius dolorem quisquam saepe voluptates, modi excepturi minima? Qui quas voluptatibus explicabo corporis dicta aperiam consequatur aliquam id dolore iste nemo, expedita tenetur placeat autem, cupiditate alias est? Repellat perferendis rem delectus placeat nisi accusantium aliquam voluptate optio, enim sint sit, consequatur beatae vitae pariatur reiciendis? Repellat eveniet veniam cum in at temporibus corrupti iste commodi asperiores, quis placeat, aut numquam voluptas, aliquid distinctio corporis quas consequuntur necessitatibus esse odio recusandae ab. Cum porro molestias consequuntur, odit totam tempore perferendis accusamus aspernatur ab suscipit, illo deleniti quis, neque praesentium excepturi! Quo blanditiis aliquam, quibusdam quos explicabo necessitatibus neque. Maiores laborum minus iste architecto voluptate odio, autem nemo minima ad fugiat perspiciatis iure laudantium quam sequi perferendis quos mollitia est alias, sed rem reprehenderit, eum excepturi debitis repudiandae. Necessitatibus, nostrum eum ratione fuga, eaque odio facilis, voluptatibus dolorem suscipit iste deleniti aspernatur?",
-    productImages: [],
-    productIcon:
-      "https://images.unsplash.com/photo-1756680967174-c0e19cf94f49?q=80&w=1287&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    minQuantity: 1,
-    maxQuantity: 10,
-    deliveryDetails: [
-      { _id: 1, pincode: "474001", estimateDeliveryInDays: 2 },
-      { _id: 2, pincode: "474011", estimateDeliveryInDays: 3 },
-      { _id: 3, pincode: "474006", estimateDeliveryInDays: 1 },
-      { _id: 4, pincode: "474009", estimateDeliveryInDays: 4 },
-    ],
-    availableColors: [],
-    category: {
-      _id: 1,
-      title: "Grocery",
-    },
-    subCategory: {
-      _id: 1,
-      title: "Fruits",
-    },
-    productSpecification: {
-      availableSizes: ["200GM", "250GM", "500GM", "1KG"],
-      availableServices: [
-        { _id: 1, icon: "", title: "10 Day Return" },
-        { _id: 2, icon: "", title: "Cash on Delivery" },
-      ],
-      packOf: 1,
-      brand: "DMart",
-      isAvailable: true,
-    },
-    rating: 4.2,
-    reviews: [],
-  },
-  {
-    _id: 2,
-    title: "Pune Special Guava",
-    quantityAvailable: 10,
-    price: 1299,
-    discountPrice: 1099,
-    productDescription:
-      "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum eius dolorem quisquam saepe voluptates, modi excepturi minima? Qui quas voluptatibus explicabo corporis dicta aperiam consequatur aliquam id dolore iste nemo, expedita tenetur placeat autem, cupiditate alias est? Repellat perferendis rem delectus placeat nisi accusantium aliquam voluptate optio, enim sint sit, consequatur beatae vitae pariatur reiciendis? Repellat eveniet veniam cum in at temporibus corrupti iste commodi asperiores, quis placeat, aut numquam voluptas, aliquid distinctio corporis quas consequuntur necessitatibus esse odio recusandae ab. Cum porro molestias consequuntur, odit totam tempore perferendis accusamus aspernatur ab suscipit, illo deleniti quis, neque praesentium excepturi! Quo blanditiis aliquam, quibusdam quos explicabo necessitatibus neque. Maiores laborum minus iste architecto voluptate odio, autem nemo minima ad fugiat perspiciatis iure laudantium quam sequi perferendis quos mollitia est alias, sed rem reprehenderit, eum excepturi debitis repudiandae. Necessitatibus, nostrum eum ratione fuga, eaque odio facilis, voluptatibus dolorem suscipit iste deleniti aspernatur?",
-    productImages: [],
-    productIcon:
-      "https://images.unsplash.com/photo-1756680967174-c0e19cf94f49?q=80&w=1287&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    minQuantity: 1,
-    maxQuantity: 10,
-    deliveryDetails: [
-      { _id: 1, pincode: "474001", estimateDeliveryInDays: 2 },
-      { _id: 2, pincode: "474011", estimateDeliveryInDays: 3 },
-      { _id: 3, pincode: "474006", estimateDeliveryInDays: 1 },
-      { _id: 4, pincode: "474009", estimateDeliveryInDays: 4 },
-    ],
-    availableColors: [],
-    category: {
-      _id: 1,
-      title: "Grocery",
-    },
-    subCategory: {
-      _id: 1,
-      title: "Fruits",
-    },
-    productSpecification: {
-      availableSizes: ["200GM", "250GM", "500GM", "1KG"],
-      availableServices: [
-        { _id: 1, icon: "", title: "10 Day Return" },
-        { _id: 2, icon: "", title: "Cash on Delivery" },
-      ],
-      packOf: 1,
-      brand: "DMart",
-      isAvailable: true,
-    },
-    rating: 4.2,
-    reviews: [],
-  },
-  {
-    _id: 3,
-    title: "Pune Special Banana",
-    quantityAvailable: 10,
-    price: 1299,
-    discountPrice: 1099,
-    productDescription:
-      "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum eius dolorem quisquam saepe voluptates, modi excepturi minima? Qui quas voluptatibus explicabo corporis dicta aperiam consequatur aliquam id dolore iste nemo, expedita tenetur placeat autem, cupiditate alias est? Repellat perferendis rem delectus placeat nisi accusantium aliquam voluptate optio, enim sint sit, consequatur beatae vitae pariatur reiciendis? Repellat eveniet veniam cum in at temporibus corrupti iste commodi asperiores, quis placeat, aut numquam voluptas, aliquid distinctio corporis quas consequuntur necessitatibus esse odio recusandae ab. Cum porro molestias consequuntur, odit totam tempore perferendis accusamus aspernatur ab suscipit, illo deleniti quis, neque praesentium excepturi! Quo blanditiis aliquam, quibusdam quos explicabo necessitatibus neque. Maiores laborum minus iste architecto voluptate odio, autem nemo minima ad fugiat perspiciatis iure laudantium quam sequi perferendis quos mollitia est alias, sed rem reprehenderit, eum excepturi debitis repudiandae. Necessitatibus, nostrum eum ratione fuga, eaque odio facilis, voluptatibus dolorem suscipit iste deleniti aspernatur?",
-    productImages: [],
-    productIcon:
-      "https://images.unsplash.com/photo-1756680967174-c0e19cf94f49?q=80&w=1287&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    minQuantity: 1,
-    maxQuantity: 10,
-    deliveryDetails: [
-      { _id: 1, pincode: "474001", estimateDeliveryInDays: 2 },
-      { _id: 2, pincode: "474011", estimateDeliveryInDays: 3 },
-      { _id: 3, pincode: "474006", estimateDeliveryInDays: 1 },
-      { _id: 4, pincode: "474009", estimateDeliveryInDays: 4 },
-    ],
-    availableColors: [],
-    category: {
-      _id: 1,
-      title: "Grocery",
-    },
-    subCategory: {
-      _id: 1,
-      title: "Fruits",
-    },
-    productSpecification: {
-      availableSizes: ["200GM", "250GM", "500GM", "1KG"],
-      availableServices: [
-        { _id: 1, icon: "", title: "10 Day Return" },
-        { _id: 2, icon: "", title: "Cash on Delivery" },
-      ],
-      packOf: 1,
-      brand: "DMart",
-      isAvailable: true,
-    },
-    rating: 4.2,
-    reviews: [],
-  },
-  {
-    _id: 4,
-    title: "Pune Special Mangoes",
-    quantityAvailable: 10,
-    price: 1299,
-    discountPrice: 1099,
-    productDescription:
-      "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum eius dolorem quisquam saepe voluptates, modi excepturi minima? Qui quas voluptatibus explicabo corporis dicta aperiam consequatur aliquam id dolore iste nemo, expedita tenetur placeat autem, cupiditate alias est? Repellat perferendis rem delectus placeat nisi accusantium aliquam voluptate optio, enim sint sit, consequatur beatae vitae pariatur reiciendis? Repellat eveniet veniam cum in at temporibus corrupti iste commodi asperiores, quis placeat, aut numquam voluptas, aliquid distinctio corporis quas consequuntur necessitatibus esse odio recusandae ab. Cum porro molestias consequuntur, odit totam tempore perferendis accusamus aspernatur ab suscipit, illo deleniti quis, neque praesentium excepturi! Quo blanditiis aliquam, quibusdam quos explicabo necessitatibus neque. Maiores laborum minus iste architecto voluptate odio, autem nemo minima ad fugiat perspiciatis iure laudantium quam sequi perferendis quos mollitia est alias, sed rem reprehenderit, eum excepturi debitis repudiandae. Necessitatibus, nostrum eum ratione fuga, eaque odio facilis, voluptatibus dolorem suscipit iste deleniti aspernatur?",
-    productImages: [],
-    productIcon:
-      "https://images.unsplash.com/photo-1756680967174-c0e19cf94f49?q=80&w=1287&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    minQuantity: 1,
-    maxQuantity: 10,
-    deliveryDetails: [
-      { _id: 1, pincode: "474001", estimateDeliveryInDays: 2 },
-      { _id: 2, pincode: "474011", estimateDeliveryInDays: 3 },
-      { _id: 3, pincode: "474006", estimateDeliveryInDays: 1 },
-      { _id: 4, pincode: "474009", estimateDeliveryInDays: 4 },
-    ],
-    availableColors: [],
-    category: {
-      _id: 1,
-      title: "Grocery",
-    },
-    subCategory: {
-      _id: 1,
-      title: "Fruits",
-    },
-    productSpecification: {
-      availableSizes: ["200GM", "250GM", "500GM", "1KG"],
-      availableServices: [
-        { _id: 1, icon: "", title: "10 Day Return" },
-        { _id: 2, icon: "", title: "Cash on Delivery" },
-      ],
-      packOf: 1,
-      brand: "DMart",
-      isAvailable: true,
-    },
-    rating: 4.2,
-    reviews: [],
-  },
-];
+// const fashionSaleBanner = "https://rukminim2.flixcart.com/fk-p-flap/50/50/image/ce75b75d19c39b98.jpg?q=50"
 
 const newTrendCategoryList = [
   {
@@ -1558,12 +1400,50 @@ const saveLaterData = [
   },
 ];
 
+const footerProps = [
+  {
+    title: "About",
+    content: [
+      { title: "Contact Us", link: "/contact" },
+      { title: "About Us", link: "/about" },
+      { title: "Career", link: "/career" },
+      { title: "Corporate Information", link: "/corporate" },
+    ],
+  },
+  {
+    title: "Group Companies",
+    content: [
+      { title: "Myntra", link: "/myntra" },
+      { title: "Cleartrip", link: "/cleartrip" },
+      { title: "Shopsy", link: "/shopsy" },
+    ],
+  },
+  {
+    title: "Help",
+    content: [
+      { title: "Payments", link: "/payment" },
+      { title: "Shipping", link: "/shipping" },
+      { title: "Cancellations & Returns", link: "/cancellation" },
+      { title: "FAQs", link: "/faq" },
+    ],
+  },
+  {
+    title: "Consumer Policy",
+    content: [
+      { title: "Cancellations & Returns", link: "/cancellation" },
+      { title: "Terms of Use", link: "/terms" },
+      { title: "Security", link: "/security" },
+      { title: "Privacy", link: "/privacy" },
+      { title: "Sitemap", link: "/sitemap" },
+    ],
+  },
+];
+
 export {
   tabsArr,
   bannerList,
   shopByCategory,
   newTrendProducts,
-  groceryTrendingProduct,
   optionsList,
   genderOption,
   faqPersonal,
@@ -1574,4 +1454,5 @@ export {
   cartData,
   saveLaterData,
   newTrendCategoryList,
+  footerProps,
 };

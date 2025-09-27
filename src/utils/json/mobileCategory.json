@@ -1,0 +1,14 @@
+{
+  "status": 200,
+  "message": "Category found successfully",
+  "data": {
+    "title": "Mobile Phones",
+    "description": "Mobile phones are no more merely a part of our lives. Whether it's to stay connected with friends and family or to keep abreast of important developments around the world, mobiles are no longer for sending a text or making a call. From budget to state-of-the-art smartphones; indigenous names to global big-wigs - a whole universe of mobiles await you on Flipkart. Whether you’re looking for waterdrop notch screens, a high screen to body ratio, AI-powered sensational cameras, high storage capacity, blazing quick processing engines or reflective glass designs, rest assured you won’t have to venture anywhere else for your smartphone needs.",
+    "banner": [
+      "https://rukminim2.flixcart.com/fk-p-flap/100/100/image/ec103e7b27e2de94.jpg?q=50",
+      "https://rukminim2.flixcart.com/fk-p-flap/50/50/image/49d711bd4a742c6f.jpg?q=50",
+      "https://rukminim2.flixcart.com/fk-p-flap/50/50/image/4c26ab250cbef865.jpg?q=50",
+      "https://rukminim2.flixcart.com/fk-p-flap/844/140/image/c779745c2748e7f1.jpg?q=50"
+    ]
+  }
+}

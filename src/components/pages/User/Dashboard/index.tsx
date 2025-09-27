@@ -1,7 +1,6 @@
 import Banner from "./Banner";
-import GroceryTrendProducts from "./GroceryTrendProducts";
+import DealSection from "./DealSection";
 import NewTrendCategory from "./NewTrendCategory";
-import NewTrendClothes from "./NewTrendClothes";
 import ShopByCategory from "./ShopByCategory";
 
 const Dashboard = () => {
@@ -9,9 +8,8 @@ const Dashboard = () => {
     <div className="w-full flex flex-col justify-center items-center">
       <Banner />
       <ShopByCategory />
-      <NewTrendClothes />
+      <DealSection />
       <NewTrendCategory />
-      <GroceryTrendProducts />
     </div>
   );
 };

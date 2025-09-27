@@ -1,0 +1,30 @@
+{
+  "status": 200,
+  "message": "Wishlist fetched successfully",
+  "data": [
+    {
+      "_id": 1,
+      "title": "Bra & Panty Set Self Design Maroon Lingerie Set",
+      "price": 176,
+      "bannerImage": "https://rukminim2.flixcart.com/image/612/612/xif0q/lingerie-set/m/k/c/30b-non-padded-bra-panty-set-karly-original-imah93f9vuhgr83k.jpeg?q=70"
+    },
+    {
+      "_id": 2,
+      "title": "Embroidered Semi Stitched Lehenga Choli  (Purple)",
+      "price": 432,
+      "bannerImage": "https://rukminim2.flixcart.com/image/612/612/xif0q/lehenga-choli/k/r/l/free-full-sleeve-embroidered-net-lehenga-in-wine-cute-fellow-original-imahem8ef6tjxmq4.jpeg?q=70"
+    },
+    {
+      "_id": 3,
+      "title": "Men Solid Round Neck Pure Cotton Blue T-Shirt",
+      "price": 399,
+      "bannerImage": "https://rukminim2.flixcart.com/image/612/612/xif0q/t-shirt/g/p/h/m-kg9198-adidas-original-imahfe4knhf2ynup.jpeg?q=70"
+    },
+    {
+      "_id": 4,
+      "title": "Rayon Blend Stitched Flared/A-line Gown  (Multicolor)",
+      "price": 354,
+      "bannerImage": "https://rukminim2.flixcart.com/image/612/612/kk1h5e80/gown/j/b/g/na-xxl-3-4-sleeve-stitched-st18012021p3-the-fam-studio-na-original-imafzh7k3qa9sq3z.jpeg?q=70"
+    }
+  ]
+}

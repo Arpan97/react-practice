@@ -1,0 +1,27 @@
+{
+  "status": 200,
+  "message": "Product fetched successfully",
+  "data": [
+    {
+      "_id": "",
+      "title": "Apple iPhone 16 (Black, 128 GB)",
+      "price": 69999,
+      "discPrice": 55999,
+      "discPer": 20,
+      "overallRating": 4.4,
+      "totalRating": 64911,
+      "category": {
+        "_id": "",
+        "title": "Mobile & Tablets"
+      },
+      "subCategory": {
+        "_id": "",
+        "title": "Mobile"
+      },
+      "brand": {
+        "_id": "",
+        "title": "Apple"
+      }
+    }
+  ]
+}

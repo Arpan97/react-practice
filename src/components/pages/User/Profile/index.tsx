@@ -8,11 +8,11 @@ import {
   genderOption,
   optionsList,
   stateData,
-  wishlistData,
 } from "../../../../utils/constantData";
 import Select from "../../../atoms/Select";
-import ProductCard from "../../../organisms/ProductCard";
 import { useNavigate } from "react-router-dom";
+import wishlistData from "../../../../utils/json/wishlistData.json";
+import ProductShort from "../../../organisms/ProductShort";
 
 type StateType = {
   selectedTab: string;
@@ -459,7 +459,6 @@ const Profile = () => {
       landmark,
       landmarkError,
       landmarkHelperText,
-      addressType,
     } = newAddressState;
     return (
       <div className="mt-4">
@@ -688,21 +687,17 @@ const Profile = () => {
       <div className="px-4 py-5">
         <h3 className="font-bold text-xl">My Wishlist</h3>
         <div className="grid sm:grid-cols-4 sm:gap-2">
-          {wishlistData?.map(
+          {wishlistData?.data?.map(
             (
               item: {
                 _id: number;
                 title: string;
                 price: number;
-                discountPrice: number;
-                productIcon: string;
-                minQuantity: number;
-                isAvailable: boolean;
-                isWishlist: boolean;
+                bannerImage: string;
               },
               index: number
             ) => {
-              return <ProductCard key={index} data={item} />;
+              return <ProductShort key={index} data={item} />;
             }
           )}
         </div>
