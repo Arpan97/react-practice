@@ -1,14 +1,9 @@
-import React from "react";
 import Container from "../organisms/Container";
 import Header from "../organisms/Header";
 import Footer from "../organisms/Footer";
-import { useLocation } from "react-router-dom";
+import { useLocation, Outlet } from "react-router-dom";
 
-interface LayoutProps {
-  children: React.ReactNode;
-}
-
-const BasicLayout: React.FC<LayoutProps> = ({ children }) => {
+const BasicLayout = () => {
   const location = useLocation();
   const noLayoutPaths = ["/login", "/createAccount"];
   const isAuthPage = noLayoutPaths.includes(location.pathname);
@@ -16,11 +11,11 @@ const BasicLayout: React.FC<LayoutProps> = ({ children }) => {
   return (
     <Container>
       {isAuthPage ? (
-        <>{children}</>
+        <Outlet />
       ) : (
         <>
           <Header />
-          {children}
+          <Outlet />
           <Footer />
         </>
       )}

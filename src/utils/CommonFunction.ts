@@ -74,10 +74,16 @@ const Snack = (type: string, message: string) => {
   });
 };
 
+const isNumber = (value: string) => {
+  const regex = /^[+-]?(\d+(\.\d+)?|\.\d+)$/;
+  return regex.test(value.trim());
+};
+
 export {
   convertMoney,
   convertMoneyRemoveDot,
   fetchDiscount,
   startTimer,
   Snack,
+  isNumber,
 };

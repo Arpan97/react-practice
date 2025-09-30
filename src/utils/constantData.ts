@@ -1439,6 +1439,83 @@ const footerProps = [
   },
 ];
 
+const sidebarData = [
+  {
+    key: "dashboard",
+    label: "Dashboard",
+    path: "/admin/dashboard",
+  },
+  {
+    key: "users",
+    label: "Users",
+    path: "/admin/user",
+  },
+  {
+    key: "deals",
+    label: "Deals",
+    children: [
+      {
+        key: "deals-add",
+        label: "Add Deal",
+        path: "/admin/deal/create",
+      },
+      {
+        key: "deals-list",
+        label: "Deal List",
+        path: "/admin/deal/list",
+      },
+    ],
+  },
+  {
+    key: "category",
+    label: "Category",
+    children: [
+      {
+        key: "category-add",
+        label: "Add Category",
+        path: "/admin/category/create",
+      },
+      {
+        key: "category-list",
+        label: "Category List",
+        path: "/admin/category/list",
+      },
+    ],
+  },
+  {
+    key: "subCategory",
+    label: "Sub Category",
+    children: [
+      {
+        key: "subCategory-add",
+        label: "Add Sub Category",
+        path: "/admin/subCategory/create",
+      },
+      {
+        key: "subCategory-list",
+        label: "Sub Category List",
+        path: "/admin/subCategory/list",
+      },
+    ],
+  },
+  {
+    key: "products",
+    label: "Products",
+    children: [
+      {
+        key: "products-list",
+        label: "Product List",
+        path: "/admin/products/list",
+      },
+      {
+        key: "products-add",
+        label: "Add Product",
+        path: "/admin/products/create",
+      },
+    ],
+  },
+];
+
 export {
   tabsArr,
   bannerList,
@@ -1455,4 +1532,5 @@ export {
   saveLaterData,
   newTrendCategoryList,
   footerProps,
+  sidebarData,
 };

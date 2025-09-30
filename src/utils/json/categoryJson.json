@@ -1,0 +1,21 @@
+{
+  "status": 200,
+  "message": "Category fetched successfully",
+  "data": [
+    {
+      "_id": "cat1",
+      "title": "Electronics",
+      "url": "https://example.com/electronics.png"
+    },
+    {
+      "_id": "cat2",
+      "title": "Fashion",
+      "url": "https://example.com/fashion.png"
+    },
+    {
+      "_id": "cat3",
+      "title": "Home & Kitchen",
+      "url": "https://example.com/home.png"
+    }
+  ]
+}

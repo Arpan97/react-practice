@@ -1,0 +1,42 @@
+{
+  "status": 200,
+  "message": "Sub Category fetched successfully",
+  "data": [
+    {
+      "_id": "sub1",
+      "title": "Mobile Phones",
+      "category": { "_id": "cat1", "title": "Electronics" },
+      "image": "https://rukminim2.flixcart.com/image/240/240/xif0q/mobile/m/n/v/-original-imahavdveeghweea.jpeg?q=60"
+    },
+    {
+      "_id": "sub2",
+      "title": "Laptops",
+      "category": { "_id": "cat1", "title": "Electronics" },
+      "image": "https://rukminim2.flixcart.com/image/312/312/xif0q/computer/s/y/j/-original-imahgfdyjrggufur.jpeg?q=70"
+    },
+    {
+      "_id": "sub3",
+      "title": "Men's Clothing",
+      "category": { "_id": "cat2", "title": "Fashion" },
+      "image": "https://rukminim2.flixcart.com/image/612/612/xif0q/t-shirt/v/m/y/m-je9392-adidas-original-imah4ybntcwhpka2.jpeg?q=70"
+    },
+    {
+      "_id": "sub4",
+      "title": "Women's Clothing",
+      "category": { "_id": "cat2", "title": "Fashion" },
+      "image": "https://rukminim2.flixcart.com/image/612/612/xif0q/t-shirt/3/e/0/s-metro-nd-529-metronaut-original-imah4b2hs9d42u5e.jpeg?q=70"
+    },
+    {
+      "_id": "sub5",
+      "title": "Kitchen Appliances",
+      "category": { "_id": "cat3", "title": "Home & Kitchen" },
+      "image": "https://rukminim2.flixcart.com/image/612/612/xif0q/kitchen-trolley/z/v/x/3-5-ts595-ibell-5-original-imagtztm2cusgwgq.jpeg?q=70"
+    },
+    {
+      "_id": "sub6",
+      "title": "Furniture",
+      "category": { "_id": "cat3", "title": "Home & Kitchen" },
+      "image": "https://rukminim2.flixcart.com/image/300/300/kd4uj680/coffee-table/z/x/5/rosewood-sheesham-mc-jk42-mooncraft-honey-finish-original-imafu3cww7m2nrcb.jpeg?q=70"
+    }
+  ]
+}

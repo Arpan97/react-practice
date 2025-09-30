@@ -16,6 +16,9 @@ import Card from "./molecules/Card";
 import Tooltip from "./molecules/ToolTip";
 import SearchBar from "./molecules/SearchBar";
 
+//Admin
+import AdminButton from "./atoms/AdminButton";
+
 export {
   Header,
   Button,
@@ -30,4 +33,5 @@ export {
   SearchBar,
   CheckBox,
   Rate,
+  AdminButton,
 };
