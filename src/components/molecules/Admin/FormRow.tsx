@@ -2,11 +2,13 @@ import React from "react";
 import type { ChangeEvent } from "react";
 import ImageUpload from "./ImageUpload";
 import PdfUpload from "./PdfUpload";
+import MultiImageUpload from "./MultipleImageUpload";
+import ToggleBtn from "../../atoms/ToggleBtn";
 
 interface Option {
   _id: number | string;
-  label: string;
-  value: string;
+  name?: string;
+  value?: string;
 }
 
 interface FormRowProps {
@@ -24,6 +26,7 @@ interface FormRowProps {
   placeholder?: string;
   inputClass?: string;
   disable?: boolean;
+  isMultiple?: boolean;
 }
 
 const FormRow: React.FC<FormRowProps> = ({
@@ -41,6 +44,7 @@ const FormRow: React.FC<FormRowProps> = ({
   placeholder,
   inputClass,
   disable,
+  isMultiple,
 }) => {
   const handleInputChange = (
     e: ChangeEvent<HTMLInputElement | HTMLSelectElement>
@@ -49,17 +53,17 @@ const FormRow: React.FC<FormRowProps> = ({
       if (type === "number") onChange?.(Number(e.target.value));
       else onChange?.(e.target.value);
     } else if (isDropdown) {
-      const findData = options?.find(
-        (itm) => itm?.value?.toLowerCase() === e.target.value.toLowerCase()
-      );
+      const typeCheck =
+        typeof e.target.value === "string"
+          ? Number(e.target.value)
+          : e.target.value;
+      const findData = options?.find((itm) => itm?._id === typeCheck);
       onChange?.(findData);
     } else if (isRadio) {
       onChange?.(e.target.value);
     } else if (isImage || isPdf) {
       const file = (e.target as HTMLInputElement).files?.[0];
       if (file) onChange?.(file);
-    } else if (isToggle) {
-      onChange?.((e.target as HTMLInputElement).checked);
     }
   };
 
@@ -84,21 +88,25 @@ const FormRow: React.FC<FormRowProps> = ({
             disabled={disable}
           />
         )}
-
         {isDropdown && (
           <select
             value={value as string | number | undefined}
             onChange={handleInputChange}
-            className="w-full lg:w-[50%] border border-gray-300 rounded p-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
+            className={`w-full lg:w-[50%] border border-gray-300 rounded p-2 focus:outline-none focus:ring-2 focus:ring-blue-500 ${inputClass}`}
           >
-            <option value={""} disabled>
+            <option value="" disabled>
               {placeholder}
             </option>
-            {options.map((opt) => (
-              <option key={opt.value.toString()} value={opt.value}>
-                {opt.label}
-              </option>
-            ))}
+            {options?.length > 0
+              ? options?.map((opt) => {
+                  const optionData = opt?.name ? opt?.name : opt?.value;
+                  return (
+                    <option key={opt?._id} value={JSON.stringify(opt?._id)}>
+                      {optionData}
+                    </option>
+                  );
+                })
+              : null}
           </select>
         )}
 
@@ -122,22 +130,21 @@ const FormRow: React.FC<FormRowProps> = ({
         )}
 
         {isToggle && (
-          <label className="relative inline-flex items-center cursor-pointer">
-            <input
-              type="checkbox"
-              checked={value as boolean}
-              onChange={handleInputChange}
-              className="sr-only"
-            />
-            <div className="w-11 h-6 bg-gray-200 rounded-full peer peer-checked:bg-blue-600"></div>
-            <span className="ml-2 text-gray-700">
-              {(value as boolean) ? "On" : "Off"}
-            </span>
-          </label>
+          <ToggleBtn
+            value={value as boolean}
+            handleChange={(val: boolean) => onChange?.(val)}
+          />
         )}
 
         {isImage && (
           <ImageUpload value={value} onUpload={(file) => onChange?.(file)} />
+        )}
+
+        {isMultiple && (
+          <MultiImageUpload
+            value={value}
+            onUpload={(file) => onChange?.(file)}
+          />
         )}
 
         {isPdf && (

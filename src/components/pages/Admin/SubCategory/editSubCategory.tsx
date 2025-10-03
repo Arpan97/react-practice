@@ -132,7 +132,6 @@ const EditSubCategory: React.FC = () => {
     });
   };
   const handleEdit = (itm: CatProps) => {
-    console.log("the itm willb b", itm);
     const { title, category, url } = itm;
     setSelectedItm(itm);
     setSubCategory(title);

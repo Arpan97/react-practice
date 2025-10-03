@@ -49,8 +49,8 @@ const CreateSubCategory = () => {
           isDropdown
           label="Category Name"
           options={[
-            { _id: 1, label: "Clothing", value: "clothing" },
-            { _id: 2, label: "Mobile & Tablet", value: "mobile" },
+            { _id: 1, name: "Clothing" },
+            { _id: 2, name: "Mobile & Tablet" },
           ]}
           value={categoryName.value}
           onChange={(val) => setCategoryName(val)}
