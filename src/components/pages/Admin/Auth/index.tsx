@@ -1,21 +1,25 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { Snack } from "../../../../utils/CommonFunction";
+import { useDispatch } from "react-redux";
+import { loginAuthAsync } from "../../../../redux/features/Auth/authThunk";
+import { type AppDispatch } from "../../../../redux/store";
 
 const Auth: React.FC = () => {
+  const dispatch = useDispatch<AppDispatch>();
   const navigate = useNavigate();
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
 
-  const handleLogin = (e: React.MouseEvent<HTMLButtonElement>) => {
+  const handleLogin = async (e: React.MouseEvent<HTMLButtonElement>) => {
     e.preventDefault();
     const reqBody = {
-      username: "",
-      password: "",
+      username: username,
+      password: password,
     };
-    console.log("req body", reqBody);
-    Snack("success", "Login successfully");
-    navigate("/admin/dashboard");
+    const result = await dispatch(loginAuthAsync(reqBody));
+    console.log("req body", result);
+    // navigate("/admin/dashboard");
   };
   const disableBtn = () => {
     return username === "" || password === "";
