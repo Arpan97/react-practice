@@ -1451,6 +1451,22 @@ const sidebarData = [
     path: "/admin/user",
   },
   {
+    key: "deliveryAgent",
+    label: "Delivery Agent",
+    children: [
+      {
+        key: "delivery-add",
+        label: "Add Delivery Agent",
+        path: "/admin/agent/create",
+      },
+      {
+        key: "delivery-list",
+        label: "Delivery Agent List",
+        path: "/admin/agent/list",
+      },
+    ],
+  },
+  {
     key: "deals",
     label: "Deals",
     children: [

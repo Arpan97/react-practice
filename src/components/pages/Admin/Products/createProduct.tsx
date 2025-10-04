@@ -519,7 +519,7 @@ const CreateProduct: React.FC = () => {
         <h1 className="bg-gray-700 px-2 py-3 uppercase text-white">
           Size & Service
         </h1>
-        <div className="py-3 px-2">
+        <div className="pt-3 px-2">
           <FormRow
             label="Size Available"
             isToggle
@@ -563,7 +563,7 @@ const CreateProduct: React.FC = () => {
                     label="Title"
                     value={availItm?.title}
                     onChange={(val) =>
-                      onChangePrice("deliveryCharge", availIdx, val as string)
+                      onChangeService("title", availIdx, val as string)
                     }
                     inputClass="lg:w-[100%]"
                   />
@@ -571,7 +571,7 @@ const CreateProduct: React.FC = () => {
                     label="Service Image"
                     isMultiple
                     value={availItm.icon}
-                    onChange={(val) => onChangePrice("icon", availIdx, val)}
+                    onChange={(val) => onChangeService("icon", availIdx, val)}
                   />
                 </>
               </div>

@@ -53,11 +53,7 @@ const FormRow: React.FC<FormRowProps> = ({
       if (type === "number") onChange?.(Number(e.target.value));
       else onChange?.(e.target.value);
     } else if (isDropdown) {
-      const typeCheck =
-        typeof e.target.value === "string"
-          ? Number(e.target.value)
-          : e.target.value;
-      const findData = options?.find((itm) => itm?._id === typeCheck);
+      const findData = options?.find((itm) => itm?._id === e.target.value);
       onChange?.(findData);
     } else if (isRadio) {
       onChange?.(e.target.value);

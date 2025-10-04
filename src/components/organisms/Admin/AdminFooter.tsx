@@ -1,9 +1,7 @@
-import React from "react";
-
 const AdminFooter = () => {
   return (
-    <footer className="bg-gray-900 text-white p-2 text-center">
-      Admin Footer
+    <footer className="bg-gray-800 text-white p-2 text-center">
+      &copy; Flipkart Admin {new Date().getFullYear()}
     </footer>
   );
 };

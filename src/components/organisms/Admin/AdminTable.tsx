@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import ModalContainer from "../../atoms/ModalContainer";
 import AdminButton from "../../atoms/AdminButton";
+import { convertMoney } from "../../../utils/CommonFunction";
 
 interface AdminTableProps<T> {
   data: T[];
@@ -91,6 +92,59 @@ const AdminTable = <T extends object>({
                   })}
                 </>
               )}
+              {type === "product" && (
+                <>
+                  <td className="border px-2 py-2">{item?.name}</td>
+                  <td className="border px-2 py-2">{item?.category?.title}</td>
+                  <td className="border px-2 py-2">
+                    {item?.subCategory?.title}
+                  </td>
+                  <td className="border px-2 py-2">{item?.brand?.title}</td>
+                  <td className="border px-2 py-2">{item?.availableQty}</td>
+                  <td className="border px-2 py-2">
+                    <img
+                      src={item.bannerImage}
+                      alt={item.name}
+                      className="w-12 h-12 object-contain mx-auto"
+                    />
+                  </td>
+                </>
+              )}
+              {type === "latestOrder" && (
+                <>
+                  <td className="border px-2 py-2 text-sm">{item?.orderId}</td>
+                  <td className="border px-2 py-2 text-sm">{item?.name}</td>
+                  <td className="border px-2 py-2 text-sm">
+                    {convertMoney(item?.price)}
+                  </td>
+                  <td className="border px-2 py-2 text-sm">
+                    {item?.status === 1
+                      ? "Pending"
+                      : item?.status === 2
+                      ? "Order Accepted"
+                      : item?.status === 3
+                      ? "On the Way"
+                      : item?.status === 4
+                      ? "Order Delivered"
+                      : item?.status === 5
+                      ? "Order Returned"
+                      : "Rejected"}
+                  </td>
+                </>
+              )}
+              {type === "trendingProduct" && (
+                <>
+                  <td className="border px-2 py-2 text-sm">{item?.orderId}</td>
+                  <td className="border px-2 py-2 text-sm">{item?.name}</td>
+                  <td className="border px-2 py-2 text-sm">
+                    {convertMoney(item?.price)}
+                  </td>
+                  <td className="border px-2 py-2 text-sm">
+                    {item?.visitedUser}
+                  </td>
+                </>
+              )}
+
               {(handleEdit || handleDelete) && (
                 <td className="border px-2 py-2">
                   <div className="flex justify-center gap-2">

@@ -19,7 +19,13 @@ const UserDetail = lazy(() => import("../pages/Admin/User"));
 const CreateProduct = lazy(
   () => import("../pages/Admin/Products/createProduct")
 );
-const EditProduct = lazy(() => import("../pages/Admin/Products/editProduct"));
+const ListProduct = lazy(() => import("../pages/Admin/Products/listProduct"));
+const CreateAgent = lazy(
+  () => import("../pages/Admin/DeliveryAgents/createDeliveryAgent")
+);
+const ListAgent = lazy(
+  () => import("../pages/Admin/DeliveryAgents/listDeliveryAgent")
+);
 
 const AdminRoute = () => {
   return (
@@ -34,7 +40,9 @@ const AdminRoute = () => {
       <Route path="/deal/list" element={<EditDeal />} />
       <Route path="/user" element={<UserDetail />} />
       <Route path="/products/create" element={<CreateProduct />} />
-      <Route path="/products/list" element={<EditProduct />} />
+      <Route path="/products/list" element={<ListProduct />} />
+      <Route path="/agent/create" element={<CreateAgent />} />
+      <Route path="/agent/list" element={<ListAgent />} />
     </Routes>
   );
 };
